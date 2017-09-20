@@ -32,6 +32,7 @@ class DrawerActivity : AppCompatActivity() , NavigationView.OnNavigationItemSele
      }
 
      override fun onBackPressed() {
+
           if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
                drawer_layout.closeDrawer(GravityCompat.START)
           } else {
@@ -56,6 +57,7 @@ class DrawerActivity : AppCompatActivity() , NavigationView.OnNavigationItemSele
      }
 
      override fun onNavigationItemSelected(item : MenuItem) : Boolean {
+
           // Handle navigation view item clicks here.
           when (item.itemId) {
                R.id.nav_camera -> {

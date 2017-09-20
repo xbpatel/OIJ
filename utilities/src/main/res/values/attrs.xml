@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TxtView">
+        <attr name="fontTxt">
+            <enum name="light" value="1" />
+            <enum name="regular" value="2" />
+            <enum name="bold" value="3" />
+            <enum name="black" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Edittxt">
+        <attr name="fontEdit">
+            <enum name="light" value="1" />
+            <enum name="regular" value="2" />
+            <enum name="bold" value="3" />
+            <enum name="black" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Buton">
+        <attr name="fontButon">
+            <enum name="light" value="1" />
+            <enum name="regular" value="2" />
+            <enum name="bold" value="3" />
+            <enum name="black" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer"/>
+    </declare-styleable>
+
+</resources>

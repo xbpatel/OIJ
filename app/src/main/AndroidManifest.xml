@@ -12,13 +12,17 @@
         <activity
             android:name=".DrawerActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".view.app.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.login.LoginActivity" />
+        <activity android:name=".view.registration.RegistrationActivity" />
+        <activity android:name=".view.app.Temp"></activity>
     </application>
 
 </manifest>

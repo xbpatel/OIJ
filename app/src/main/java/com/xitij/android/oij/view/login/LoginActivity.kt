@@ -21,6 +21,9 @@ class LoginActivity : AppCompatActivity() {
           tabLogin.getTabAt(2) !!.setIcon(R.drawable.ic_fingerprint_black_24dp)
 
           tabLogin.setupWithViewPager(pagerLogin)
+
+
+
           tabLogin.addOnTabSelectedListener(object : TabLayout.ViewPagerOnTabSelectedListener(pagerLogin) {
 
                override fun onTabSelected(tab : TabLayout.Tab?) {

@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.adcreators.android.xion.view.callbacks.OnFragmentInteractionListener
 
 import com.xitij.android.oij.R
 
@@ -40,12 +41,6 @@ class PincodeLoginFragment : Fragment() {
           return inflater.inflate(R.layout.fragment_pincode_login , container , false)
      }
 
-     // TODO: Rename method, update argument and hook method into UI event
-     fun onButtonPressed(uri : Uri) {
-          if (mListener != null) {
-               mListener !!.onFragmentInteraction(uri)
-          }
-     }
 
      override fun onAttach(context : Context) {
           super.onAttach(context)
@@ -61,19 +56,7 @@ class PincodeLoginFragment : Fragment() {
           mListener = null
      }
 
-     /**
-      * This interface must be implemented by activities that contain this
-      * fragment to allow an interaction in this fragment to be communicated
-      * to the activity and potentially other fragments contained in that
-      * activity.
-      *
-      *
-      * See the Android Training lesson [Communicating with Other Fragments](http://developer.android.com/training/basics/fragments/communicating.html) for more information.
-      */
-     interface OnFragmentInteractionListener {
-          // TODO: Update argument type and name
-          fun onFragmentInteraction(uri : Uri)
-     }
+
 
      companion object {
           // TODO: Rename parameter arguments, choose names that match

@@ -21,7 +21,7 @@ import com.xitij.android.oij.R
  */
 class FingerprintLoginFragment : Fragment() {
 
-     // TODO: Rename and change types of parameters
+
      private var mParam1 : String? = null
      private var mParam2 : String? = null
 
@@ -82,4 +82,4 @@ class FingerprintLoginFragment : Fragment() {
                return fragment
           }
      }
-}// Required empty public constructor
+}    // Required empty public constructor

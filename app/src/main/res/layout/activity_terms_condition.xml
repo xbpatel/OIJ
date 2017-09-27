@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xitij.android.oij.view.terms.TermsConditionActivity">
+
+    <include layout="@layout/appbar"></include>
+
+    <com.adcreators.android.utilities.widgets.TxtView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:text="@string/lorem" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:padding="16dp"
+        android:text="I Agree" />
+
+    <com.adcreators.android.utilities.widgets.Buton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAgree"
+        android:text="Continue" />
+
+
+</LinearLayout>

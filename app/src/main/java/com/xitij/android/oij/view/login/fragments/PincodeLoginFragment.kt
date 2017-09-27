@@ -1,15 +1,16 @@
 package com.xitij.android.oij.view.login.fragments
 
 import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.adcreators.android.xion.view.callbacks.OnFragmentInteractionListener
-
+import com.andrognito.pinlockview.PinLockListener
 import com.xitij.android.oij.R
+import kotlinx.android.synthetic.main.fragment_pincode_login.*
+
 
 /**
  * A simple [Fragment] subclass.
@@ -41,6 +42,27 @@ class PincodeLoginFragment : Fragment() {
           return inflater.inflate(R.layout.fragment_pincode_login , container , false)
      }
 
+
+     override fun onViewCreated(view : View? , savedInstanceState : Bundle?) {
+          super.onViewCreated(view , savedInstanceState)
+          pin_lock_view.setPinLockListener(mPinLockListener);
+          pin_lock_view.attachIndicatorDots(indicator_dots);
+     }
+
+
+     private val mPinLockListener = object : PinLockListener {
+          override fun onComplete(pin : String) {
+               // Log.d(TAG , "Pin complete: " + pin)
+          }
+
+          override fun onEmpty() {
+               //Log.d(TAG , "Pin empty")
+          }
+
+          override fun onPinChange(pinLength : Int , intermediatePin : String) {
+               //Log.d(TAG , "Pin changed, new length $pinLength with intermediate pin $intermediatePin")
+          }
+     }
 
      override fun onAttach(context : Context) {
           super.onAttach(context)
@@ -82,4 +104,4 @@ class PincodeLoginFragment : Fragment() {
                return fragment
           }
      }
-}// Required empty public constructor
+}

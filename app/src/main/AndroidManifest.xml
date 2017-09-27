@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".DrawerActivity"
+            android:name=".view.home.InvestorsHomeActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".view.app.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,8 @@
         </activity>
         <activity android:name=".view.login.LoginActivity" />
         <activity android:name=".view.registration.RegistrationActivity" />
-        <activity android:name=".view.app.Temp"></activity>
+        <activity android:name=".view.app.Temp" />
+        <activity android:name=".view.terms.TermsConditionActivity"></activity>
     </application>
 
 </manifest>

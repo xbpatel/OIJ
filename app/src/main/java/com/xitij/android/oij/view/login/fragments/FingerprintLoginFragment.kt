@@ -28,6 +28,7 @@ class FingerprintLoginFragment : Fragment() {
      private var mListener : OnFragmentInteractionListener? = null
 
      override fun onCreate(savedInstanceState : Bundle?) {
+          
           super.onCreate(savedInstanceState)
           if (arguments != null) {
                mParam1 = arguments.getString(ARG_PARAM1)

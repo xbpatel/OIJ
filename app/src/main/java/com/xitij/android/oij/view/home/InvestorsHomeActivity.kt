@@ -1,4 +1,4 @@
-package com.xitij.android.oij
+package com.xitij.android.oij.view.home
 
 import android.os.Bundle
 import android.support.design.widget.NavigationView
@@ -8,14 +8,16 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.xitij.android.oij.R
 import kotlinx.android.synthetic.main.activity_drawer.*
 import kotlinx.android.synthetic.main.app_bar_drawer.*
 
-class DrawerActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
+class InvestorsHomeActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
 
      override fun onCreate(savedInstanceState : Bundle?) {
           super.onCreate(savedInstanceState)
           setContentView(R.layout.activity_drawer)
+          toolbar.title = "Investor Dashboard"
           setSupportActionBar(toolbar)
 
           fab.setOnClickListener { view ->
@@ -43,7 +45,7 @@ class DrawerActivity : AppCompatActivity() , NavigationView.OnNavigationItemSele
      override fun onCreateOptionsMenu(menu : Menu) : Boolean {
           // Inflate the menu; this adds items to the action bar if it is present.
           menuInflater.inflate(R.menu.drawer , menu)
-          return true
+          return false
      }
 
      override fun onOptionsItemSelected(item : MenuItem) : Boolean {
@@ -72,12 +74,7 @@ class DrawerActivity : AppCompatActivity() , NavigationView.OnNavigationItemSele
                R.id.nav_manage -> {
 
                }
-               R.id.nav_share -> {
 
-               }
-               R.id.nav_send -> {
-
-               }
           }
 
           drawer_layout.closeDrawer(GravityCompat.START)

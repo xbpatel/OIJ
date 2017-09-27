@@ -1,15 +1,17 @@
 package com.xitij.android.oij.view.login.fragments
 
 import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.adcreators.android.utilities.extentions.showNextScreen
 import com.adcreators.android.xion.view.callbacks.OnFragmentInteractionListener
-
 import com.xitij.android.oij.R
+import com.xitij.android.oij.view.registration.RegistrationActivity
+import com.xitij.android.oij.view.terms.TermsConditionActivity
+import kotlinx.android.synthetic.main.fragment_user_name_login.*
 
 /**
  * A simple [Fragment] subclass.
@@ -41,6 +43,20 @@ class UserNameLoginFragment : Fragment() {
           return inflater.inflate(R.layout.fragment_user_name_login , container , false)
      }
 
+
+     override fun onViewCreated(view : View? , savedInstanceState : Bundle?) {
+          super.onViewCreated(view , savedInstanceState)
+
+          btnLoginUsername.setOnClickListener {
+               activity.showNextScreen(TermsConditionActivity::class.java)
+               activity.finish()
+          }
+
+          btnGotoRegistration.setOnClickListener {
+               activity.showNextScreen(RegistrationActivity::class.java)
+          }
+
+     }
 
      override fun onAttach(context : Context) {
           super.onAttach(context)

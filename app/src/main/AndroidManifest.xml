@@ -23,7 +23,11 @@
         <activity android:name=".view.login.LoginActivity" />
         <activity android:name=".view.registration.RegistrationActivity" />
         <activity android:name=".view.app.Temp" />
-        <activity android:name=".view.terms.TermsConditionActivity"></activity>
+        <activity android:name=".view.terms.TermsConditionActivity" />
+        <activity
+            android:name=".view.home.DistributorsHomeActivity"
+            android:label="@string/title_activity_distributors_home"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

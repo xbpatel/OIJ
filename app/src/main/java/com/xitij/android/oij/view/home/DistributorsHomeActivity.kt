@@ -1,8 +1,8 @@
 package com.xitij.android.oij.view.home
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
+import android.support.design.widget.Snackbar
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
@@ -17,12 +17,9 @@ class DistributorsHomeActivity : AppCompatActivity() , NavigationView.OnNavigati
      override fun onCreate(savedInstanceState : Bundle?) {
           super.onCreate(savedInstanceState)
           setContentView(R.layout.activity_distributors_home)
-          setSupportActionBar(toolbar)
 
-          fab.setOnClickListener { view ->
-               Snackbar.make(view , "Replace with your own action" , Snackbar.LENGTH_LONG)
-                       .setAction("Action" , null).show()
-          }
+          toolbar.title = "Distributor Dashboard"
+          setSupportActionBar(toolbar)
 
           val toggle = ActionBarDrawerToggle(
                   this , drawer_layout , toolbar , R.string.navigation_drawer_open , R.string.navigation_drawer_close)
@@ -43,7 +40,7 @@ class DistributorsHomeActivity : AppCompatActivity() , NavigationView.OnNavigati
      override fun onCreateOptionsMenu(menu : Menu) : Boolean {
           // Inflate the menu; this adds items to the action bar if it is present.
           menuInflater.inflate(R.menu.distributors_home , menu)
-          return true
+          return false
      }
 
      override fun onOptionsItemSelected(item : MenuItem) : Boolean {

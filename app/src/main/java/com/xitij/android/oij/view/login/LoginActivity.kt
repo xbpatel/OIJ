@@ -47,7 +47,6 @@ class LoginActivity : AppCompatActivity() , OnFragmentInteractionListener {
                     super.onTabUnselected(tab)
                     setUnselected(tab?.position)
 
-
                }
 
           })

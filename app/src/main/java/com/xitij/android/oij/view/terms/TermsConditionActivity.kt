@@ -22,16 +22,17 @@ class TermsConditionActivity : AppCompatActivity() {
 
           btnAgree.setOnClickListener {
 
+               showNextScreen(InvestorsHomeActivity::class.java)
 
-               val builder = AlertDialog.Builder(this)
-               builder.setMessage("Which home screen you like to visit ?  Investor or Distributor? \n\n\n\nThis is for navigational purpose, This will not display in actual functionality.")
-                       .setCancelable(true)
-                       .setPositiveButton("Investor" , DialogInterface.OnClickListener { dialog , id -> showNextScreen(InvestorsHomeActivity::class.java) })
-                       .setNegativeButton("Distributor" , DialogInterface.OnClickListener { dialog , id ->
-                            showNextScreen(DistributorsHomeActivity::class.java)
-                       })
-               val alert = builder.create()
-               alert.show()
+//               val builder = AlertDialog.Builder(this)
+//               builder.setMessage("Which home screen you like to visit ?  Investor or Distributor? \n\n\n\nThis is for navigational purpose, This will not display in actual functionality.")
+//                       .setCancelable(true)
+//                       .setPositiveButton("Investor" , DialogInterface.OnClickListener { dialog , id -> showNextScreen(InvestorsHomeActivity::class.java) })
+//                       .setNegativeButton("Distributor" , DialogInterface.OnClickListener { dialog , id ->
+//                            showNextScreen(DistributorsHomeActivity::class.java)
+//                       })
+//               val alert = builder.create()
+//               alert.show()
 
           }
 

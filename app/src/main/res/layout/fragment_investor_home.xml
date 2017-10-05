@@ -8,7 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:orientation="vertical">
 
         <LinearLayout
@@ -17,22 +16,46 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <Button
-                android:background=""
-                android:layout_weight="1"
+            <com.adcreators.android.utilities.widgets.SquareLinearLayout
                 android:layout_width="match_parent"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="Login" />
+                android:gravity="center_horizontal"
+               android:background="@color/grey_100"
+                android:orientation="vertical"
+                android:padding="8dp">
 
-            <Button
-                android:layout_weight="1"
+                <com.adcreators.android.utilities.widgets.TxtView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Investments" />
+
+
+            </com.adcreators.android.utilities.widgets.SquareLinearLayout>
+
+            <com.adcreators.android.utilities.widgets.SquareLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="Signup" />
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:background="@color/grey_200"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <com.adcreators.android.utilities.widgets.TxtView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dividents" />
+
+            </com.adcreators.android.utilities.widgets.SquareLinearLayout>
 
 
         </LinearLayout>
+
+        <com.adcreators.android.utilities.widgets.HalfSquareLinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/grey_300"
+            android:layout_height="wrap_content"></com.adcreators.android.utilities.widgets.HalfSquareLinearLayout>
 
     </LinearLayout>
 

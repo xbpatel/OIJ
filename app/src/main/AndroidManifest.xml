@@ -27,7 +27,8 @@
         <activity
             android:name=".view.home.DistributorsHomeActivity"
             android:label="@string/title_activity_distributors_home"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.myinvestments.MyInvestmentsActivity"></activity>
     </application>
 
 </manifest>

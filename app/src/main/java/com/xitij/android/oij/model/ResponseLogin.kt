@@ -7,11 +7,11 @@ import com.fasterxml.jackson.annotation.JsonProperty
  */
 data class ResponseLogin(
 
-        @JsonProperty("ResponseCode")
+        @JsonProperty("code")
         val responseCode: Int? = null,
 
         @JsonProperty("Data")
         val data: UserData? = null,
 
-        @JsonProperty("ResponseMessage")
+        @JsonProperty("message")
         val responseMessage: String? = null)

@@ -15,6 +15,7 @@ class TermsConditionActivity : AppCompatActivity() {
 
      override fun onCreate(savedInstanceState : Bundle?) {
           super.onCreate(savedInstanceState)
+          showNextScreen(InvestorsHomeActivity::class.java)
           setContentView(R.layout.activity_terms_condition)
 
           toolbar.title = "Terms and Conditions"

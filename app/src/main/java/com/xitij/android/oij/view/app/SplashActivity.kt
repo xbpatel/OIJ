@@ -13,6 +13,10 @@ class SplashActivity : AppCompatActivity() {
           super.onCreate(savedInstanceState)
           setContentView(R.layout.activity_splash)
 
+          var testing : Int?
+          testing = 10
+
+
           object : CountDownTimer(1500 , 1000) {
 
                override fun onTick(l : Long) {

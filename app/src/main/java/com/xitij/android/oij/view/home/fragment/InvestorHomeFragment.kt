@@ -6,8 +6,11 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.adcreators.android.utilities.extentions.showNextScreen
 import com.adcreators.android.xion.view.callbacks.OnFragmentInteractionListener
 import com.xitij.android.oij.R
+import com.xitij.android.oij.view.myinvestments.MyInvestmentsActivity
+import kotlinx.android.synthetic.main.fragment_investor_home.*
 
 /**
  * A simple [Fragment] subclass.
@@ -39,6 +42,16 @@ class InvestorHomeFragment : Fragment() {
           return inflater.inflate(R.layout.fragment_investor_home , container , false)
      }
 
+
+     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+          super.onViewCreated(view, savedInstanceState)
+
+          area_myinvestments.setOnClickListener {
+               activity.showNextScreen(MyInvestmentsActivity::class.java)
+          }
+
+
+     }
 
      override fun onAttach(context : Context) {
           super.onAttach(context)

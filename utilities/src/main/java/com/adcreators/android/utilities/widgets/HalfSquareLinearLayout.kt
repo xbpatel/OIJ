@@ -17,8 +17,8 @@ open class HalfSquareLinearLayout : LinearLayout {
 
      constructor(context : Context , attrs : AttributeSet) : super(context , attrs) {
 
-     }
 
+     }
 
      public override fun onMeasure(widthMeasureSpec : Int , heightMeasureSpec : Int) {
 
